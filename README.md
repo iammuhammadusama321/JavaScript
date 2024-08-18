@@ -1,2 +1,2 @@
 # JavaScript
-covering the whole javascript playlist with chai and code
+covering main concepts of javascript with buildnig projects knowledge
