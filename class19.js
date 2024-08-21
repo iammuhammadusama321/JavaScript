@@ -34,7 +34,7 @@ const addTwonumbers = (num1, num2) => {
 
 }
 
-console.log(addTwonumbers(3, 8))
+console.log(addTwonumbers(3, 10))
 
 //function name () {}
 //arrow: () => {}

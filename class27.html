@@ -1,0 +1,88 @@
+<!--All DOM selectors NodeList and HTMLCollection-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>DOM learning</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div >
+        <h1  id="title" class="heading">DOM learning on Chai aur code <span style="display: none;">test text</span></h1>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <input type="password" name="" id="">
+
+        <ul>
+            <li class="list-item">one</li>
+            <li class="list-item">two</li>
+            <li class="list-item">three</li>
+            <li class="list-item">four</li>
+        </ul>
+    </div>
+</body>
+</html>
+
+<!--
+
+-selecting by id:
+
+document.getElementById('title').id
+
+-selecting by class:
+
+document.getElementById('title').classname
+
+-get attribute attribute
+
+document.getElementById('title').getAttribute('id')
+
+-set attribute (it will always overwrite)
+
+document.getElementById('title').setAttribute('class', 'test')
+
+-making variable and doing some styling
+
+const title = document.getElementById('title')
+title.style.backgroundColor = 'green'
+title.style.padding = '15px'
+title.style.borderRadius = '5px'
+
+-for displaying content
+
+title.innerHTML (this will give tags of html as well)
+title.innertext
+title.textContent
+
+(same thing)
+
+-query selector
+
+document.querySelector('h1')
+document.querySelector('#title')
+document.querySelector('.heading')
+document.querySelector('input [type = "password"]')
+
+-manipulating with ul items
+
+document.querySelector('ul')
+const myul = document.querySelector('ul')
+myul.querySelector('li')
+const turnGreen = myul.querySelector('li')
+turnGreen.style.backgroundColor = 'yellow'
+turnGreen.style.color = 'black'
+turnGreen.style.padding = '15px'
+turnGreen.innerText
+turnGreen.innerText = 'five'
+
+
+-->
