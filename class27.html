@@ -98,5 +98,24 @@ tempLiList.forEach(function (l){
     l.style.backgroundColor = 'skyblue'
 })
 
+document.getElementsByClassName('list-item')
+const manipulation = document.getElementsByClassName('list-item')
+const convertedArray = Array.from(manipulation)
+convertedArray[2].style.color = "red"
+convertedArray.forEach(function (li) {
+
+li.style.color = 'orange'
+    
+})
+
+-Manipulating js page
+
+const allH3 = document.querySelectorAll('h3')
+allH3[2].innerText
+allH3.forEach(function (k){
+
+k.style.color = "red"
+    
+})
 
 -->
