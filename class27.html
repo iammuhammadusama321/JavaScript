@@ -84,5 +84,19 @@ turnGreen.style.padding = '15px'
 turnGreen.innerText
 turnGreen.innerText = 'five'
 
+-Nodelist or queryselectorall (for selecting multiple items)
+
+document.querySelectorAll('li')
+const tempLiList = document.querySelectorAll('li')
+tempLiList[1].style.color = 'yellow'
+tempLiList[3].style.color = 'skyblue'
+
+-with for each (function or arrow function)
+
+tempLiList.forEach(function (l){
+
+    l.style.backgroundColor = 'skyblue'
+})
+
 
 -->
