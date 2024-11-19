@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async</title>
+</head>
+<body>
+
+    <h1>Javascript Playlist is about to be End</h1>
+    <button id="stop">Stop</button>
+    
+</body>
+
+<script>
+
+    //basic setTimeout example
+
+    const sayRyan = function(){
+
+        console.log("Its Ryan")
+
+    }
+
+    setTimeout(sayRyan, 2000)
+
+    //use of clearTimeout by a stop button
+
+    const changetext = function(){
+
+        document.querySelector('h1').innerHTML= "End JavaScript in this week"
+    }
+
+    const changeMe = setTimeout(changetext, 3000)
+
+    document.querySelector('#stop').addEventListener('click', function(){
+
+            clearTimeout(changeMe)
+            console.log("Stopped")
+    })
+    
+
+    /*we are holding last setTimeout in a variable and by targetting an event,
+    we are using the timeout stop using stop button*/
+    
+
+</script>
+
+</html>
